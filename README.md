@@ -48,5 +48,4 @@ flowchart LR
 ## Como Executar no Google Colab
 
 1. Abra `1_Notebook_GS2026_2.ipynb` no Google Colab.
-2. Adicione sua chave `GOOGLE_API_KEY` na aba **Secrets** (ícone 🔑) do Colab.
-3. Clique em **Runtime -> Run all** (`Executar tudo`).
+2. Clique em **Runtime -> Run all** (`Executar tudo`).
