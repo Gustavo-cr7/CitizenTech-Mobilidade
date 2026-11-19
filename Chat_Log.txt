@@ -1,0 +1,18 @@
+Registro de Uso de IA Generativa — GS 2026.2 (Turma 1CCPJ)
+Projeto: NovaMobi 407 — Assistente de Mobilidade Urbana (Frente A)
+Dupla: Gustavo de Souza Correa (RM570746) e Arthur Tae Gun Yong (RM570647)
+
+1. Planejamento e Base Documental (DOC01, DOC02 e DOC03)
+- Solicitação à IA: estruturação inicial dos três documentos da Linha 407 de Nova Esperança em Markdown contendo conflito temporal (Portaria 118/2026 suspendendo o Ponto P-18 e cortando horários de 10h00 e 14h00), diferença de faixa etária (60+ no micro-ônibus vs. 65+ na tarifa) e regra da 2ª via do Passe Livre no fim do DOC03.
+- Revisão da dupla: ajuste dos textos, inclusão da cláusula de LGPD e do trecho de teste de injeção no DOC03, e comparação prática entre E1 (900/0, 7 chunks) e E2 (380/70, 19 chunks).
+
+2. Pipeline RAG e Integração com Gemini API
+- Solicitação à IA: adaptação da chain LCEL para usar `google-genai` e `models/gemini-embedding-001` no Colab com fallback de modelos para evitar erro 503 e travamento de SQLite do ChromaDB.
+- Revisão da dupla: criação da função `montar_contexto_cronologico` (ordenando os chunks pela data de publicação para priorizar o DOC02 sobre o DOC01) e validação das respostas com citação de fonte.
+
+3. Agente ReAct com 3 Ferramentas e 4 Guardrails
+- Solicitação à IA: implementação das tools `calcular_proximo_onibus`, `verificar_ponto_parada` e `buscar_normas_smmu`, além do filtro de segurança e tela Gradio em duas colunas.
+- Revisão da dupla: teste do cálculo de espera às 09:40 em dia útil (considerando a supressão das 10h00 e +12 min de viagem), validação do ponto inexistente `P-99` e testes dos 4 bloqueios (escopo, prompt injection, LGPD e "Não sei").
+
+4. Avaliação RAGAS e Documentação
+- Trabalho manual da dupla: escrita dos 8 ground truths (N1-Q1 a N2-Q8), execução das métricas (`faithfulness=1.00`, `answer_relevancy=0.9975`, `context_precision=0.98`, `context_recall=1.00`) e redação da análise crítica no notebook e no README.

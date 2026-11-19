@@ -1,0 +1,15 @@
+{
+  "sistema": "NovaMobi 407 — Assistente de Mobilidade Urbana (Nova Esperança)",
+  "turma": "1CCPJ",
+  "dupla": [
+    "Gustavo de Souza Correa (RM570746)",
+    "Arthur Tae Gun Yong (RM570647)"
+  ],
+  "chunking": "E2: chunk_size=380, chunk_overlap=70, k=4",
+  "medias": {
+    "faithfulness": 1.0,
+    "answer_relevancy": 0.9975,
+    "context_precision": 0.98,
+    "context_recall": 1.0
+  }
+}

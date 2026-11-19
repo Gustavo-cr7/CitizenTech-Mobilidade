@@ -1,0 +1,16 @@
+GS 2026.2 — Certificação de Entrega (Frente A — Mobilidade Urbana)
+Disciplina: Prompt and Artificial Intelligence (Prof. Jorge Luiz Gomes)
+Turma: 1CCPJ
+Modalidade: Dupla
+
+Integrantes e RMs:
+- Gustavo de Souza Correa — RM570746
+- Arthur Tae Gun Yong — RM570647
+
+Links da Entrega:
+- Notebook (Google Colab): COLE_AQUI_O_LINK_DO_COLAB
+- Vídeo de Demonstração (YouTube não listado, até 3 min): ver 7_demo_video_url.txt
+- Repositório / ZIP: GS2026_2_1CCPJ_NovaMobi407.zip
+
+Declaração e Tela Final:
+Confirmamos que o notebook 1_Notebook_GS2026_2.ipynb foi executado de cima para baixo sem erros, sem exposição de chaves de API no código/prints, com base documental própria (DOC01, DOC02, DOC03), 4 guardrails testados e avaliação RAGAS exportada em 3_avaliacao_ragas.json.
